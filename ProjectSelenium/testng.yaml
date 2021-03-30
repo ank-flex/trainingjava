@@ -1,0 +1,8 @@
+name: Suite
+configFailurePolicy: skip
+parameters: { Browser: Chrome }
+tests:
+  - name: Test
+  classes:
+    - org.testing.testScripts.TC11
+

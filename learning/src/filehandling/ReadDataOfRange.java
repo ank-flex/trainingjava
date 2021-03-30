@@ -16,15 +16,26 @@ public class ReadDataOfRange {
 		BufferedReader br=new BufferedReader(fr);
 		int a1=start;
 		int a2=end;
-		String lineIWant=null;
-		while ( a2>=a1)
-		{
+	String line;
 		
-			 br.readLine();
-				 lineIWant = br.readLine();
-				System.out.println(lineIWant);
-				--a2;
-		}
+	for ( int ln = 0; (line = br.readLine()) != null && ln <= a2; ln++ ) {
+	    if ( ln >= a1 ) {
+//		for (int i = a1; i < a2+1; i++) {
+//			if (br.readLine()) == null)
+         //   while ((lineIWant = br.readLine()) != null) {
+			line= br.readLine();
+                System.out.println(line);
+         //   }
+        }
+	}
+//		while ( a2>=a1)
+//		{
+//		
+//			 br.readLine();
+//				 lineIWant = br.readLine();
+//				System.out.println(lineIWant);
+//				--a2;
+//		}
 	}
 
 	public static void main(String[] args) throws IOException
